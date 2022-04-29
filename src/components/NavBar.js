@@ -3,8 +3,9 @@ import CartWidget from "./CartWidget";
 
 
 const styleNav = {
-backgroundColor: 'gray',
-color: 'white'
+backgroundColor: '#a6a6a6',
+color: 'white',
+
 }
 
 
