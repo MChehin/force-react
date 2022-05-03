@@ -1,8 +1,11 @@
 import React from 'react';
+import {getMotos} from "../data/getMotos"
 
 const ItemListContainer = ({greeting}) => {
   return (
-    <div> Listado de compra {greeting}</div>
+    <>
+    <h1> Listado de compra {greeting}</h1>
+    </>
   )
 }
 
