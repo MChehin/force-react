@@ -5,6 +5,7 @@
 
 .style-nav {
     background-color: #a6a6a6;
-    color: white;
+    color: black;
     display: flex;
+    align-items: flex-end;
     }

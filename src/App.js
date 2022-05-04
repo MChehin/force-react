@@ -19,9 +19,12 @@ import Contador from './components/Contador';
 }*/}
 
 function App() {
+  const isBackgroundBlack = true;
+
   return (
     <>
-    <NavBar></NavBar>
+    <div className={isBackgroundBlack ? 'background-black' : 'background-grey'} />
+    <NavBar className="" ></NavBar>
     <h1 style={{color:'brown'}} className="text-4xl font-bold self-center">Elegí tu próxima moto</h1>
     <MotosContainer/> 
   {/*<Card title= 'Nueva tarjeta' nuevoComponente= {Saludo}></Card>
