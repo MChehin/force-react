@@ -18,8 +18,8 @@ const NavBar = () => {
         
         <nav clasName="style-nav" className="md:ml-auto md:mr-auto flex items-center text-base justify-center">
           <Link to='' className="mr-5"> Inicio</Link>
-          <Link to='/MotoContainer' className="mr-5"> MOTOS </Link>
-          <Link to='' className="mr-5"> ACCESORIOS </Link>
+          <Link to='/Moto.Container' className="mr-5"> MOTOS </Link>
+          <Link to='/AccesoriosContainer' className="mr-5"> ACCESORIOS </Link>
           <CartWidget></CartWidget>
         </nav>
       </div>

@@ -31,8 +31,8 @@ function App() {
         </h1>
         <Routes>
           <Route path="/" element={<Saludo/>} />
-          <Route path="/Motos.Container/*" element={<MotosContainer />} />
-          <Route path="/Motos.Container/:motosId" element={<MotoDetail />} />
+          <Route path="/MotosContainer/*" element={<MotosContainer />} />
+          <Route path="/MotosContainer/:motosId" element={<MotoDetail />} />
           <Route path="/AccesoriosContainer/*" element={<AccesoriosContainer />}/>
           <Route path="/AccesoriosContainer/:accesoriosId" element={<AcceDetail />}/>
         </Routes>
