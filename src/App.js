@@ -12,6 +12,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MotoDetail from "./components/ItemDetailContainer/MotoDetailContainer";
 import AccesoriosContainer from "./components/AccesoriosContainer/AccesoriosContainer";
 import AcceDetail from "./components/ItemDetailContainer/AcceDetailContainer";
+import NotFound404 from "./pages/NotFound404";
 
 function App() {
   const isBackgroundBlack = true;
@@ -35,6 +36,7 @@ function App() {
           <Route path="/MotosContainer/:motosId" element={<MotoDetail />} />
           <Route path="/AccesoriosContainer/*" element={<AccesoriosContainer />}/>
           <Route path="/AccesoriosContainer/:accesoriosId" element={<AcceDetail />}/>
+          <Route path="*" element={<NotFound404 />}/>
         </Routes>
       </BrowserRouter>
       {/*<Card title= 'Nueva tarjeta' nuevoComponente= {Saludo}></Card>
