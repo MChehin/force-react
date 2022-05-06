@@ -22,7 +22,7 @@ const MotoDetail = () => {
             }, 1000);
         })
     } 
-    motos 
+
     return (
         <>
         <div>MotoDetail -{motosId} </div>

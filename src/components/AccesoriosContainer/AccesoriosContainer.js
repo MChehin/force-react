@@ -5,12 +5,12 @@ import AccesorioCard from '../AccesorioCard/AccesorioCard'
 
 const AccesoriosContainer = () => {
 
-    const [accesorios, setaccesorios] = useState([])
+    const [accesorios, setAccesorios] = useState([])
     const [isLoading, setIsLoading] = useState ( true )
 
    useEffect(() => {
        getAccesorios().then ( acceData => {
-           setLoading(  false )
+           setIsLoading(  false )
           setAccesorios( acceData ) 
        })
    },[]) 

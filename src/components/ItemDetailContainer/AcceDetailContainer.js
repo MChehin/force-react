@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import { accesorios } from "../../data/accesorios"
 
 
 const AcceDetail = () => {
-    const {acceId} = useParams()
+    const {accesoriosId} = useParams()
     const [accesorios, setAccesorios] = useState( {} )
    
     useEffect(() => {
@@ -22,7 +23,7 @@ const AcceDetail = () => {
             }, 1000);
         })
     } 
-    accesorios 
+    
     return (
         <>
         <div>Accesorios Detail -{accesoriosId} </div>
