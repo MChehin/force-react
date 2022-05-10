@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { accesorios } from "../../data/accesorios"
+import { accesorios } from "../../data/products"
 
 
 const AcceDetail = () => {

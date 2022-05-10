@@ -3,6 +3,9 @@ import moto2 from "./img/tiendaducati.jpeg"
 import moto3 from "./img/tienda1.jpg"
 import moto4 from "./img/tienda7.jpg"
 import moto5 from "./img/tienda6.jpg"
+import accesorio7 from "./img/campera1.jpg"
+import accesorio8 from "./img/remeraa.jpg"
+import accesorio9 from "./img/campera2.png"
 
 
 export const motos = [
@@ -12,4 +15,12 @@ export const motos = [
     {id: 5, brand:'Yamaha', name:'Res 125', year:'1980', price:'USD 5.000', image: moto5 },
     {id: 4, brand:'Honda', name:'CBX-1050', year:'1980', price:'USD 25.000', image: moto4 },
     {id: 6, brand:'Yamaha', name:'Res 125', year:'1980', price:'USD 5.000', image: moto5 },
+]
+
+
+export const accesorios = [
+    {id: 7, brand:'Force', articulo:' Campera de cuero',  year:'2022', price:'USD 700', image: accesorio7  },
+    {id: 8, brand:'Negro', articulo:'Remera', year:'2022', price:'USD 50', image: accesorio8 },
+    {id: 9, brand:'Force', articulo:'Campera de cuero B', year:'2022', price:'USD 1.000', image: accesorio9 },
+    
 ]

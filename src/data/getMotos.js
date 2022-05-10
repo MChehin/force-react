@@ -1,4 +1,4 @@
-import { motos } from "./motos";
+import { motos } from "./products";
 
 export const getMotos = () => {
 return new Promise ((resolve, reject) => {

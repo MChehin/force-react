@@ -1,5 +1,4 @@
 import React from 'react';
-import {getMotos} from "../data/getMotos"
 
 const ItemListContainer = ({greeting}) => {
   return (

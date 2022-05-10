@@ -9,16 +9,16 @@ import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <header className="nav-bar text-gray-600 body-font">
+    <header className="nav-item text-gray-600 body-font">
       <div className="container mx-auto flex p-5 flex-col md:flex-row items-center">
       <Link to='/' className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
       <img src= './data/img/logo.jpg'  width={182} height={64}/>
           <span className="ml-5 text-xl border">FORCE GARAGE</span>
       </Link>
         
-        <nav clasName="style-nav" className="md:ml-auto md:mr-auto flex items-center text-base justify-center">
+        <nav clasName="nav-link" className="md:ml-auto md:mr-auto flex items-center text-base justify-center">
           <Link to='' className="mr-5"> Inicio</Link>
-          <Link to='/Moto.Container' className="mr-5"> MOTOS </Link>
+          <Link to='/MotosContainer' className="mr-5"> MOTOS </Link>
           <Link to='/AccesoriosContainer' className="mr-5"> ACCESORIOS </Link>
           <CartWidget></CartWidget>
         </nav>

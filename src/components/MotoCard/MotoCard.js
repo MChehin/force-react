@@ -6,10 +6,11 @@ const MotoCard = ( {motoData} ) => {
       <div className="moto-card">
           
           <strong>{motoData.brand}</strong>
+          <img src= {motoData.image} alt={motoData.name}/>
           <h1>{motoData.name}</h1>
           <h2>{motoData.year}</h2>
           <h2>{motoData.price}</h2>
-          <img src= {motoData.image} alt={motoData.name}/>
+          
       </div>
     )
   }

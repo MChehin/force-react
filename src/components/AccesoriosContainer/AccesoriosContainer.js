@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { accesorios } from '../../data/accesorios'
+import { accesorios } from '../../data/getAccesorios'
 import LoadingSpinner from '../LoadingSpinner/Loading.Spinner'
 import AccesorioCard from '../AccesorioCard/AccesorioCard'
 

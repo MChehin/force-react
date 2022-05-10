@@ -1,10 +1,10 @@
 import React from "react";
-import MotoCard from "../AccesorioCard/AccesorioCard";
-
+import AccesorioCard from "../AccesorioCard/AccesorioCard";
+import "./AccesorioList.css"
 
 const AccesorioList = ({accesorios}) => {
     return (
-        <div>       
+        <div className= "acce-list">       
         {accesorios.map( accesorios => <AccesorioCard key={accesorios.id} acceData={accesorios}/> )}
         </div>
     )
