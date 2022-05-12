@@ -8,7 +8,7 @@ const ItemDetailContainer = ({ id }) => {
   const [moto, setMoto] = useState(null);
 
   useEffect(()=>{
-    getProductById(id, setMoto); get
+    getProductById(id, setMoto);
   }, []);
 
   
