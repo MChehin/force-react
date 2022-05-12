@@ -4,7 +4,7 @@ import MotoList from "../MotoList/MotoList";
 import LoadingSpinner from "../LoadingSpinner/Loading.Spinner"
 
 
-const MotosContainer = () => {
+const MotosListContainer = () => {
   const [motos, setMotos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -25,5 +25,5 @@ const MotosContainer = () => {
       )
       }
 
-export default MotosContainer 
+export default MotosListContainer 
 

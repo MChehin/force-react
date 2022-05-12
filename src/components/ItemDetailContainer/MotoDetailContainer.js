@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom"
 import { motos } from "../../data/products"
 import ItemDetail from "../ItemDetail/ItemDetail"
 
-const ItemDetail = () => {
+
+const ItemDetailContainer = () => {
     const {motosId} = useParams()
     const [moto, setMoto] = useState( {} )
    
@@ -36,4 +37,4 @@ const ItemDetail = () => {
     )
 }
 
-export default ItemDetail 
+export default ItemDetailContainer 

@@ -4,10 +4,10 @@ import ItemDetail from '../ItemDetail/ItemDetail';
 
 const ItemDetailContainer = ({ id }) => {
 
-  const [product, setProduct] = useState(null);
+  const [moto, setMoto] = useState(null);
 
   useEffect(()=>{
-    getProductById(id, setProduct);
+    getProductById(id, setMoto); get
   }, []);
 
   
@@ -17,13 +17,13 @@ const ItemDetailContainer = ({ id }) => {
     <div>
 
       { 
-        product ?
+        moto ?
 
-        <ItemDetail product = {product} />
+        <ItemDetail moto = {moto} />
 
         : <p>Cargando producto...</p> 
       }
-      { isLoading ?<LoadingSpinner/> : accesorios.map( a => <AccesorioCard key={a.id} acceData={a} />) 
+      { isLoading ?<LoadingSpinner/> : moto.map( a => <MotoCard key={m.id} MotoData={m} />) 
             }   
 
     </div>
