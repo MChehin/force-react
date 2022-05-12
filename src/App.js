@@ -1,5 +1,4 @@
 import React from "react";
-//import logo from './logo.svg';
 import "./App.css";
 import { buildQueries } from "@testing-library/react";
 import NavBar from "./components/NavBar/NavBar";
@@ -10,8 +9,6 @@ import Saludo from "./components/Saludo";
 import Contador from "./components/Contador";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MotoDetail from "./components/ItemDetailContainer/MotoDetailContainer";
-import AccesoriosContainer from "./components/AccesoriosContainer/AccesoriosContainer";
-import AcceDetail from "./components/ItemDetailContainer/AcceDetailContainer";
 import MotoCard from "./components/MotoCard/MotoCard";
 import NotFound404 from "./pages/NotFound404";
 import DetailPage from "./pages/detailpage";
