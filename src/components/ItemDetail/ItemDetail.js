@@ -1,4 +1,5 @@
 import React from 'react'
+import { motos } from "../../data/products"
 
 
 const ItemDetail = ({motos}) => {

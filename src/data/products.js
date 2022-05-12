@@ -8,8 +8,9 @@ import accesorio8 from "./img/remeraa.jpg"
 import accesorio9 from "./img/campera2.png"
 
 
+
 export const motos = [
-    {id: 1, brand:'Kawasaki', name:' Ninja 400',  year:'1999', price:'USD 6.500', image: moto1  },
+    {id: 1, brand:'Kawasaki', name:' Ninja 400',  year:'1999', price:'USD 6.500', image: moto1 },
     {id: 2, brand:'Ducati', name:'1098', year:'2010', price:'USD 15.000', image: moto2 },
     {id: 3, brand:'Suzuki', name:'GS 750', year:'1978', price:'USD 7.000', image: moto3 },
     {id: 5, brand:'Yamaha', name:'Res 125', year:'1980', price:'USD 5.000', image: moto5 },

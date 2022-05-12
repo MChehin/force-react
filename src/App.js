@@ -14,6 +14,9 @@ import AccesoriosContainer from "./components/AccesoriosContainer/AccesoriosCont
 import AcceDetail from "./components/ItemDetailContainer/AcceDetailContainer";
 import MotoCard from "./components/MotoCard/MotoCard";
 import NotFound404 from "./pages/NotFound404";
+import DetailPage from "./pages/detailpage";
+import About from "./pages/aboutus";
+
 
 function App() {
   const isBackgroundBlack = true;
@@ -27,16 +30,17 @@ function App() {
         <NavBar></NavBar>
         <h1
           style={{ color: "brown" }}
-          className="text-4xl font-bold self-center right "
+          className="text-4xl font-bold self-center right ml-6 "
         >
-          Elegí tu próxima moto
+          Mecánica integral y custom de motos
         </h1>
+        
         <Routes>
           <Route path="/" element={<Saludo/>} />
           <Route path="/MotosListContainer/*" element={<MotosContainer />} />
           <Route path="/MotosListContainer/:motosId" element={<MotoDetail />} />
-          <Route path="/AccesoriosContainer/*" element={<AccesoriosContainer />}/>
-          <Route path="/AccesoriosContainer/:accesoriosId" element={<AcceDetail />}/>
+          <Route path="/motos/:id" element={<DetailPage />} />
+          <Route path="/aboutus/*" element={<About/>}/>
           <Route path="*" element={<NotFound404 />}/>
         </Routes>
       </BrowserRouter>

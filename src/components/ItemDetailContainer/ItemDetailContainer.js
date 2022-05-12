@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { getProductById } from '../../helpers/getProducts';
 import ItemDetail from '../ItemDetail/ItemDetail';
 
+
 const ItemDetailContainer = ({ id }) => {
 
   const [moto, setMoto] = useState(null);
@@ -23,8 +24,6 @@ const ItemDetailContainer = ({ id }) => {
 
         : <p>Cargando producto...</p> 
       }
-      { isLoading ?<LoadingSpinner/> : moto.map( a => <MotoCard key={m.id} MotoData={m} />) 
-            }   
 
     </div>
 
