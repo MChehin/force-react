@@ -1,18 +1,30 @@
 import React from "react";
-import "./MotoCard.css"; 
+import { Link } from 'react-router-dom';
+import "./MotoCard.css";
 
 const MotoCard = ( {motoData} ) => {
-    return (
-      <div className="moto-card">
+
+  const {image, brand, name, id, price, year} = motoData;  
+  
+  return (
+      <article className="moto-card">
           
           <strong>{motoData.brand}</strong>
           <img src= {motoData.image} alt={motoData.name}/>
           <h1>{motoData.name}</h1>
           <h2>{motoData.year}</h2>
           <h2>{motoData.price}</h2>
-          
-      </div>
+          <div>
+          <Link to={`/motoData/${ id }`}>
+              <h3> { name } </h3>
+          </Link>
+            <span> ${ price } </span>
+            </div>
+      </article>
     )
   }
   export default MotoCard
   
+
+
+ 

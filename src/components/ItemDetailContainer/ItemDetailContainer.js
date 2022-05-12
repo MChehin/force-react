@@ -21,7 +21,7 @@ const ItemDetailContainer = ({ id }) => {
 
         <ItemDetail product = {product} />
 
-        : <p>Cargando producto...</p> //poner el spinner 
+        : <p>Cargando producto...</p> 
       }
       { isLoading ?<LoadingSpinner/> : accesorios.map( a => <AccesorioCard key={a.id} acceData={a} />) 
             }   

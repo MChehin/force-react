@@ -1,21 +1,22 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { motos } from "../../data/products"
+import ItemDetail from "../ItemDetail/ItemDetail"
 
-const MotoDetail = () => {
+const ItemDetail = () => {
     const {motosId} = useParams()
     const [moto, setMoto] = useState( {} )
    
     useEffect(() => {
         
     (async () => {
-            const motos = await getMotoDetail()  //función anónima asincrónica autoejecutable, que para la ejecución hasta obtener la respuesta de MotoDetail 
+            const motos = await getItemDetail()  //función anónima asincrónica autoejecutable, que para la ejecución hasta obtener la respuesta de MotoDetail 
             setMoto(motos)
         })()
 
     }, [motosId])
 
-    const getMotoDetail = () => {
+    const getItemDetail = () => {
         return new Promise ( (resolve) => {
             setTimeout(() =>{
                 resolve(motos.find((m) => m.id === Number  (motosId)))
@@ -35,4 +36,4 @@ const MotoDetail = () => {
     )
 }
 
-export default MotoDetail 
+export default ItemDetail 
