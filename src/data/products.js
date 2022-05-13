@@ -19,6 +19,7 @@ export const motos = [
 ]
 
 
+
 export const accesorios = [
     {id: 7, brand:'Force', articulo:' Campera de cuero',  year:'2022', price:'USD 700', image: accesorio7  },
     {id: 8, brand:'Negro', articulo:'Remera', year:'2022', price:'USD 50', image: accesorio8 },

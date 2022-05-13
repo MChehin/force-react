@@ -27,12 +27,7 @@ const ItemDetailContainer = () => {
 
     return (
         <>
-        <div>MotoDetail -{motosId} </div>
-        <strong className="p-2">{moto.id} </strong>
-        <strong className="p-2">{moto.brand} </strong>
-        <strong className="p-2">{moto.name} </strong>
-        <img className="p-2">{moto.image} </img>
-        <strong className="p-2">{moto.price} </strong>
+        <ItemDetail moto={moto}/>
         </>
     )
 }
