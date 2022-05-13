@@ -13,18 +13,25 @@ import MotoCard from "./components/MotoCard/MotoCard";
 import NotFound404 from "./pages/NotFound404";
 import DetailPage from "./pages/detailpage";
 import About from "./pages/aboutus";
+import { DarkModeContext } from "./components/context/darkModeContext";
+import { useState } from "react";
+import ToggleDarkMode from "./components/ToggleDarkMode/ToggleDarkMode";
 
 
 function App() {
-  const isBackgroundBlack = true;
+ 
+  const [darkMode, setDarkMode] = useState(false)
+
+  const darkModeHandler = () => {
+    setDarkMode( currentState => !currentState)
+    }
 
   return (
     <>
-      <div
-        className={isBackgroundBlack ? "background-black" : "background-grey"}
-      />
+      <DarkModeContext.Provider value={darkMode}>
       <BrowserRouter>
         <NavBar></NavBar>
+        <ToggleDarkMode darkMode={darkMode} darkModeHandler = {darkModeHandler} />
         <h1
           style={{ color: "brown" }}
           className="text-4xl font-bold self-center right ml-6 "
@@ -41,6 +48,7 @@ function App() {
           <Route path="*" element={<NotFound404 />}/>
         </Routes>
       </BrowserRouter>
+      </DarkModeContext.Provider>
       {/*<Card title= 'Nueva tarjeta' nuevoComponente= {Saludo}></Card>
   <Contador></Contador>*/}
     </>
