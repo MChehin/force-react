@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { getMotos } from "../../data/getMotos";
 import MotoList from "../MotoList/MotoList";
 import LoadingSpinner from "../LoadingSpinner/Loading.Spinner"
+import CartProvider from "../context/CartContex";
+
 
 
 const MotosListContainer = () => {
@@ -26,10 +28,12 @@ const MotosListContainer = () => {
     }, [categoryId])
 
     return(
-      <>
-      <h1>Motos Container</h1>
+      <CartProvider>
+      <div>
+      <h1 className="text-3xl m-4">Nuestras motos</h1>
       {isLoading ?<LoadingSpinner/> : <MotoList motos={motos}/>}
-      </>
+      </div>
+      </CartProvider>
       )
       }
 

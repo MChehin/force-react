@@ -19,7 +19,7 @@ const NavBar = () => {
           <Link to='/MotosListContainer' className="mr-5"> MOTOS </Link>
           <Link to='/MotosListContainer/Kawasaki' className="mr-5"> Kawasaki </Link>
           <Link to='/MotosListContainer/Ducati' className="mr-5"> Ducati </Link>
-          <Link to='/MotosListContainer/Suzuki' className="mr-5"> Susuki </Link>
+          <Link to='/MotosListContainer/Suzuki' className="mr-5"> Suzuki </Link>
           <Link to='/MotosListContainer/Yamaha' className="mr-5"> Yamaha </Link>
           <Link to='/MotosListContainer/Honda' className="mr-5"> Honda </Link>
           <Link to='/aboutus' className="mr-5"> QUIÉNES SOMOS </Link>

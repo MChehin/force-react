@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
-import MotosContainer from "./components/MotosListContainer/MotosListContainer";
+import MotosListContainer from "./components/MotosListContainer/MotosListContainer";
 import Saludo from "./components/Saludo";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MotoDetail from "./components/ItemDetailContainer/MotoDetailContainer";
@@ -35,8 +35,8 @@ function App() {
         
         <Routes>
           <Route path="/" element={<Saludo/>} />
-          <Route path="/MotosListContainer" element={<MotosContainer />} />
-          <Route path="/MotosListContainer/:categoryId" element={<MotosContainer />} />
+          <Route path="/MotosListContainer" element={<MotosListContainer />} />
+          <Route path="/MotosListContainer/:categoryId" element={<MotosListContainer />} />
           <Route path="/motoData/:motosId" element={<MotoDetail />} />
           <Route path="/aboutus/*" element={<About/>}/>
           <Route path="*" element={<NotFound404 />}/>

@@ -16,10 +16,10 @@ const MotoCard = ( {motoData} ) => {
           <h2>{motoData.price}</h2>
           <div>
           <Link to={`/motoData/${ id }`}>
-              <h3> { name } </h3>
+          <button className="btn"> Comprar</button>
           </Link>
-            <span> ${ price } </span>
             </div>
+             
       </article>
     )
   }
