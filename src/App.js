@@ -1,17 +1,11 @@
 import React from "react";
 import "./App.css";
-import { buildQueries } from "@testing-library/react";
 import NavBar from "./components/NavBar/NavBar";
-import ItemListContainer from "./components/ItemListContainer";
 import MotosContainer from "./components/MotosListContainer/MotosListContainer";
-import Card from "./components/Card";
 import Saludo from "./components/Saludo";
-import Contador from "./components/Contador";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MotoDetail from "./components/ItemDetailContainer/MotoDetailContainer";
-import MotoCard from "./components/MotoCard/MotoCard";
 import NotFound404 from "./pages/NotFound404";
-import DetailPage from "./pages/detailpage";
 import About from "./pages/aboutus";
 import { DarkModeContext } from "./components/context/darkModeContext";
 import { useState } from "react";
@@ -41,9 +35,9 @@ function App() {
         
         <Routes>
           <Route path="/" element={<Saludo/>} />
-          <Route path="/MotosListContainer/*" element={<MotosContainer />} />
-          <Route path="/MotosListContainer/:motosId" element={<MotoDetail />} />
-          <Route path="/motos/:id" element={<DetailPage />} />
+          <Route path="/MotosListContainer" element={<MotosContainer />} />
+          <Route path="/MotosListContainer/:categoryId" element={<MotosContainer />} />
+          <Route path="/motoData/:motosId" element={<MotoDetail />} />
           <Route path="/aboutus/*" element={<About/>}/>
           <Route path="*" element={<NotFound404 />}/>
         </Routes>
