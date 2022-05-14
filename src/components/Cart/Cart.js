@@ -6,7 +6,7 @@ const Cart = () => {
   const { cartList, emptyCart, totalPrice } = useCartContext();
 
   return (
-    <div>
+    <div className="cart-style">
       {cartList.map((MotoCard) => (
         <CartMotoCard key={MotoCard.id} MotoCard={MotoCard} />
       ))}

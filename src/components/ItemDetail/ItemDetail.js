@@ -2,7 +2,8 @@ import React from 'react'
 import { useCartContext } from "../../context/CartContexProvider";
 import GoToCart from '../GoToCart/GoToCart';
 import ItemCount from '../SetCount/SetCount';
-import { useState } from "react"
+import { useState } from "react";
+import "./ItemDetail.css"
 
 
 

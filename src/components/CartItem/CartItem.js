@@ -1,5 +1,6 @@
 import React from "react";
 import { useCartContext } from "../../context/CartContexProvider";
+import "./CartItem.css" 
 
 
 
@@ -8,7 +9,7 @@ const CartItem = ({ MotoCard }) => {
   const { name, quantity, price, id } = MotoCard;
 
   return (
-    <div>
+    <div className="cart-item">
       <h1>{name}</h1>
       <h4>Unidades: {quantity}</h4>
       <h4>Precio unitario: ${price}</h4>

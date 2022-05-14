@@ -1,5 +1,6 @@
 .cart-logo {
-  height: 50px;  
+  display: flex;
+  height: 35px;  
 }
 
 .units {
