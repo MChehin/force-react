@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+
 import NavBar from "./components/NavBar/NavBar";
 import MotosListContainer from "./components/MotosListContainer/MotosListContainer";
 import Saludo from "./components/Saludo";
@@ -7,10 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MotoDetail from "./components/ItemDetailContainer/MotoDetailContainer";
 import NotFound404 from "./pages/NotFound404";
 import About from "./pages/aboutus";
-import { DarkModeContext } from "./components/context/darkModeContext";
+import { DarkModeContext } from "./context/darkModeContext";
 import { useState } from "react";
 import ToggleDarkMode from "./components/ToggleDarkMode/ToggleDarkMode";
-
+import CartContextProvider from "./context/CartContexProvider"
+import ItemDetail from "./components/ItemDetail/ItemDetail";
+import "./App.css";
 
 function App() {
  
@@ -22,6 +24,7 @@ function App() {
 
   return (
     <>
+      <CartContextProvider>
       <DarkModeContext.Provider value={darkMode}>
       <BrowserRouter>
         <NavBar></NavBar>
@@ -35,14 +38,15 @@ function App() {
         
         <Routes>
           <Route path="/" element={<Saludo/>} />
+          <Route path="/aboutus/*" element={<About/>}/>
           <Route path="/MotosListContainer" element={<MotosListContainer />} />
           <Route path="/MotosListContainer/:categoryId" element={<MotosListContainer />} />
           <Route path="/motoData/:motosId" element={<MotoDetail />} />
-          <Route path="/aboutus/*" element={<About/>}/>
           <Route path="*" element={<NotFound404 />}/>
         </Routes>
       </BrowserRouter>
       </DarkModeContext.Provider>
+      </CartContextProvider>
       {/*<Card title= 'Nueva tarjeta' nuevoComponente= {Saludo}></Card>
   <Contador></Contador>*/}
     </>

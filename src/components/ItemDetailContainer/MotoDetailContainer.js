@@ -7,7 +7,7 @@ import ItemDetail from "../ItemDetail/ItemDetail"
 const ItemDetailContainer = () => {
     const {motosId} = useParams()
     const [moto, setMoto] = useState( {} )
-   
+    
     useEffect(() => {
         
     (async () => {
