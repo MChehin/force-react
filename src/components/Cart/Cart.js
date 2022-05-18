@@ -8,7 +8,7 @@ const Cart = () => {
   return (
     <div className="cart-style">
       {cartList.map((MotoCard) => (
-        <CartMotoCard key={MotoCard.id} MotoCard={MotoCard} />
+        <CartItem key={MotoCard.id} MotoCard={MotoCard} />
       ))}
       {cartList.length > 0 ? (
         <>

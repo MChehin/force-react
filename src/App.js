@@ -11,7 +11,9 @@ import { useState } from "react";
 import ToggleDarkMode from "./components/ToggleDarkMode/ToggleDarkMode";
 import CartContextProvider from "./context/CartContexProvider"
 import ItemDetail from "./components/ItemDetail/ItemDetail";
+import Cart from "./components/Cart/Cart";
 import "./App.css";
+import GoToCart from "./components/GoToCart/GoToCart";
 
 function App() {
  
@@ -42,6 +44,7 @@ function App() {
           <Route path="/MotosListContainer/:categoryId" element={<MotosListContainer />} />
           <Route path="/motoData/:motosId" element={<MotoDetail />} />
           <Route path="*" element={<NotFound404 />}/>
+          <Route path="/Cart" element={<Cart />}/>
         </Routes>
       </BrowserRouter>
       </DarkModeContext.Provider>
