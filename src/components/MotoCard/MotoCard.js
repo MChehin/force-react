@@ -2,12 +2,14 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import "./MotoCard.css";
 
-const MotoCard = ( {motoData} ) => {
+
+const MotoCard = ( {motoData, darkMode = false} ) => {
 
   const {image, brand, name, id, price, year} = motoData;  
+
   
   return (
-      <article className="moto-card m-5">
+      <div className={`moto-card m-5 p-2 ${darkMode ? 'bg-black-300' : '' }`}>
           
           <strong>{motoData.brand}</strong>
           <img src= {motoData.image} alt={motoData.name}/>
@@ -21,7 +23,7 @@ const MotoCard = ( {motoData} ) => {
           </Link>
             </div>
              
-      </article>
+      </div>
     )
   }
   export default MotoCard

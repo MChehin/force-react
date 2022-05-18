@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import { useDarkMode } from "../../context/darkModeContext"
 import { motos } from "../../data/products"
 import ItemDetail from "../ItemDetail/ItemDetail"
 
@@ -7,6 +8,9 @@ import ItemDetail from "../ItemDetail/ItemDetail"
 const ItemDetailContainer = () => {
     const {motosId} = useParams()
     const [moto, setMoto] = useState( {} )
+    
+
+    const darkMode = useDarkMode()
     
     useEffect(() => {
         

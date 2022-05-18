@@ -17,7 +17,7 @@ const NavBar = () => {
       <Link to='/' className="flex title-font font-medium items-right text-gray-900 mb-4 md:mb-0">
       <img className="logo" src={ logo }  width={182} height={64} alt="" />
       </Link>
-        <nav clasName="nav-link" className="md:ml-auto md:mr-auto flex items-center text-base justify-right">
+        <nav className="md:ml-auto md:mr-auto flex items-center text-base justify-right">
           <Link to='' className="mr-5"> Inicio</Link>
           <Link to='/aboutus' className="mr-5"> QUIÉNES SOMOS </Link>
           <Link to='/MotosListContainer' className="mr-5"> MOTOS </Link>
