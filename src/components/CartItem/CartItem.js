@@ -12,9 +12,9 @@ const CartItem = ({ MotoCard }) => {
     <div className="cart-item">
       <h1>{name}</h1>
       <h4>Unidad/es: {quantity}</h4>
-      <h4>Precio unitario: ${price}</h4>
-      <button onClick={() => removeOneUnit(id)}>Eliminar 1</button>
-      <button onClick={() => deleteById(id)}>Eliminar todos</button>
+      <h4>Precio unitario: USD ${price}</h4>
+      <button className="btn m-3" onClick={() => removeOneUnit(id)}>Eliminar 1</button>
+      <button className="btn" onClick={() => deleteById(id)}>Eliminar todos</button>
     </div>
   );
 };
