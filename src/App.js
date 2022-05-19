@@ -14,6 +14,8 @@ import ItemDetail from "./components/ItemDetail/ItemDetail";
 import Cart from "./components/Cart/Cart";
 import "./App.css";
 import GoToCart from "./components/GoToCart/GoToCart";
+import MotoKawasaki from "./components/shop/MotoKawasaki"
+import Modelos from "./components/shop/Modelos"
 
 function App() {
  
@@ -44,6 +46,8 @@ function App() {
           <Route path="/MotosListContainer/:categoryId" element={<MotosListContainer />} />
           <Route path="/motoData/:motosId" element={<MotoDetail />} />
           <Route path="*" element={<NotFound404 />}/>
+          <Route path="/modelo" element={<MotoKawasaki />} />
+          <Route path="/modelos" element={<Modelos />} />
           <Route path="/Cart" element={<Cart />}/>
         </Routes>
       </BrowserRouter>
