@@ -40,4 +40,4 @@ const getMotoKawasaki = () => {
     )
 }
 
-export default MotoKawasaki()
+export default MotoKawasaki
