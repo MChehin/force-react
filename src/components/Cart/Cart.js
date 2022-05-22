@@ -2,6 +2,7 @@ import { useCartContext } from "../../context/CartContexProvider"
 import CartItem from "../CartItem/CartItem.js";
 
 
+
 const Cart = () => {
   const { cartList, emptyCart, totalPrice } = useCartContext();
 
@@ -14,6 +15,7 @@ const Cart = () => {
         <>
           <button className="btn m-5" onClick={() => emptyCart()}>Limpiar carrito de compras</button>
           <h1>Precio total: USD ${totalPrice()}</h1>
+          
         </>
       ) : (
         <h1>Carrito vacío</h1>

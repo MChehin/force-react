@@ -12,6 +12,7 @@ const ItemDetail = ({moto, darkMode = false}) => {
   const { name, price, image, brand, year, id, stock, } = moto;
   const [countToAdd, setCountToAdd] = useState(0);
   const { addToCart, unitsPerProduct } = useCartContext();
+
  
   const handleOnAdd = (count) => {
     if (count + unitsPerProduct(id) > stock) {

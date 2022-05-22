@@ -16,6 +16,7 @@ import "./App.css";
 import GoToCart from "./components/GoToCart/GoToCart";
 import MotoKawasaki from "./components/shop/MotoKawasaki"
 import Modelos from "./components/shop/Modelos"
+import SaveItem from "./components/CartItem/SaveItem";
 
 function App() {
  
@@ -49,6 +50,8 @@ function App() {
           <Route path="/modelo" element={<MotoKawasaki />} />
           <Route path="/modelos" element={<Modelos />} />
           <Route path="/Cart" element={<Cart />}/>
+          <Route path="/Cart/SalvarItem" element={<SaveItem />}/>
+
         </Routes>
       </BrowserRouter>
       </DarkModeContext.Provider>

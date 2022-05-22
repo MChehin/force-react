@@ -26,6 +26,7 @@ const NavBar = () => {
           <Link to='/MotosListContainer/Suzuki' className="mr-5"> Suzuki </Link>
           <Link to='/MotosListContainer/Yamaha' className="mr-5"> Yamaha </Link>
           <Link to='/MotosListContainer/Honda' className="mr-5"> Honda </Link>
+          <Link to='/Modelos' className="mr-5"> Modelos </Link>
           {totalCount() > 0 && <CartWidget />}
         </nav>
       </div>

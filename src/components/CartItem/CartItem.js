@@ -8,6 +8,9 @@ const CartItem = ({ MotoCard }) => {
   const { deleteById, removeOneUnit } = useCartContext();
   const { name, quantity, price, id } = MotoCard;
 
+
+
+  
   return (
     <div className="cart-item">
       <h1>{name}</h1>
