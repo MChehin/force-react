@@ -12,8 +12,8 @@ import logo from "../../data/img/logo.jpg"
 const NavBar = () => {
   const { totalCount } = useCartContext();
   return (
-    <header className="nav-item text-gray-600 body-font">
-      <div className="container mx-auto flex p-5 flex-col md:flex-row items-right">
+    <header className="nav-item text-gray-800 body-font">
+      <div className="container bg-gray-300 mx-auto flex p-5 flex-col md:flex-row items-right">
       <Link to='/' className="flex title-font font-medium items-right text-gray-900 mb-4 md:mb-0">
       <img className="logo" src={ logo }  width={182} height={64} alt="" />
       </Link>

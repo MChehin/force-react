@@ -4,6 +4,7 @@ import moto3 from "./img/tienda1.jpg"
 import moto4 from "./img/tienda7.jpg"
 import moto5 from "./img/tienda6.jpg"
 import moto6 from "./img/tiendayamaha.jpg"
+import tablero from "./img/tableromoto.jpg"
 
 
 
@@ -17,3 +18,7 @@ export const motos = [
     {id: 6, brand:'Yamaha', name:'YBR 125', year:'1980', price:'5000', image: moto6, stock: '2'},
 ]
 
+export const hero = [
+    {id: 7, image: tablero},
+    
+]

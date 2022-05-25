@@ -32,7 +32,7 @@ const MotosListContainer = () => {
     return(
       
       <div>
-      <h1 className="text-3xl m-4">Nuestras motos</h1>
+      <h1 className="text-3xl text-white m-4 bg-black p-8">NUESTRAS MOTOS</h1>
       {isLoading ?<LoadingSpinner/> : <MotoList motos={motos}/>}
       </div>
       

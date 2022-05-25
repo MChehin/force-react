@@ -1,6 +1,7 @@
 import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 import React, { useEffect, useState } from 'react'
 import ModelosCard from './ModelosCard'
+import './ModelosCard.css'
 
 const Modelos = () => {
     
@@ -45,7 +46,7 @@ const Modelos = () => {
         <div  className='text-xl p-2 m-4'>Modelos</div>
         {modelos.map( m => <ModelosCard key={m.id}  ForceReact={m} />)} 
         <div className='text-3xl font-bold p-6 m-5'>Modelos en Promo</div>
-        {modelosEco.map( m => <div className='text-xl p-2 m-4' key={m.id}> { m.title }</div>)} 
+        {modelosEco.map( m => <div className='moto-promo text-xl p-2 ml-4' key={m.id}> { m.title } </div>)} 
         </>
   )
 }

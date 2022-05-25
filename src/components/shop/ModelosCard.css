@@ -1,10 +1,34 @@
+.moto-row {
+    display: flex;  
+    flex-direction: row;
+}
+
+
 .moto-card {
-    display:flex; 
-    flex-direction: column; 
-    align-items: center; 
+    display: flex;  
+    flex-direction: column;
+
+    align-items: center;
     border: 2px solid black; 
-    margin:5px; 
+    margin:5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;   
     padding:5px; 
     background-color:#a6a6a6;
     color:#6b3923; 
+    height: 500px;
+    width: 450px;
+}
+
+.moto-promo {
+        background-color: black;
+        display:flex; 
+        flex-direction: column; 
+        align-items: center;
+        border: 2px solid black; 
+        margin:5px; 
+        padding:5px; 
+        background-color:#a6a6a6;
+        color:#6b3923; 
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        width: 15rem;
 }

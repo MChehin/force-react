@@ -11,5 +11,6 @@
 .units {
   text-decoration: none;
   font-size: 15px;
-  color: black
+  color: black;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }

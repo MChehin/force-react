@@ -7,7 +7,7 @@ const MotoList = ({motos}) => {
     const darkMode = useDarkMode ()
 
     return (
-        <div className= "moto-list">       
+        <div className= "moto-list p-6">       
         {motos.map( moto => <MotoCard key={moto.id} motoData={moto} darkMode={darkMode}/> )}
         </div>
     )

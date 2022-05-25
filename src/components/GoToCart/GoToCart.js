@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const GoToCart = () => {
   return (
     <Link to="/cart">
-      <button className="">Ir al carrito</button>
+      <button className="text-4xl">Ir al carrito</button>
     </Link>
   );
 };

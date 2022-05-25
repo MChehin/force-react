@@ -9,7 +9,7 @@ const MotoCard = ( {motoData, darkMode = false} ) => {
 
   
   return (
-      <div className={`moto-card m-5 p-2 ${darkMode ? 'bg-black-300' : '' }`}>
+      <div className={`moto-card1 m-5 p-2  ${darkMode ? 'bg-black-300' : '' }`}>
           
           <strong>{motoData.brand}</strong>
           <img src= {motoData.image} alt={motoData.name}/>
