@@ -33,9 +33,12 @@ const getMotoKawasaki = () => {
     return (
         <div key={modelo.id}>
         <div> {modelo.title} </div>
+        <img src={modelo.image}/>
         <div> Precio: {modelo.price} </div>
         <div> Descripción: {modelo.description} </div>
         <div> Stock: {modelo.stock} </div>
+        
+
         </div>
     )
 }

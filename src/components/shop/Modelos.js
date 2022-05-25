@@ -43,9 +43,9 @@ const Modelos = () => {
 
     return (
         <>
-        <div  className='text-xl p-2 m-4'>Modelos</div>
+        <div  className='text-4xl text-white bg-black p-2 m-4'>Modelos</div>
         {modelos.map( m => <ModelosCard key={m.id}  ForceReact={m} />)} 
-        <div className='text-3xl font-bold p-6 m-5'>Modelos en Promo</div>
+        <div className='text-3xl text-white bg-black p-2 m-4'>Modelos en Promo</div>
         {modelosEco.map( m => <div className='moto-promo text-xl p-2 ml-4' key={m.id}> { m.title } </div>)} 
         </>
   )
