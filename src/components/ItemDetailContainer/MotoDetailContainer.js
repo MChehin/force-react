@@ -1,37 +1,35 @@
+import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { useDarkMode } from "../../context/darkModeContext"
-import { motos } from "../../data/products"
 import ItemDetail from "../ItemDetail/ItemDetail"
 
-
 const ItemDetailContainer = () => {
-    const {motosId} = useParams()
-    const [moto, setMoto] = useState( {} )
+    const {modelosId} = useParams()
+    const [modelo, setModelo] = useState( {} )
     
-
     const darkMode = useDarkMode()
     
     useEffect(() => {
         
     (async () => {
-            const motos = await getItemDetail()  //función anónima asincrónica autoejecutable, que para la ejecución hasta obtener la respuesta de MotoDetail 
-            setMoto(motos)
+            const modelos = await getItemDetail()  //función anónima asincrónica autoejecutable, que para la ejecución hasta obtener la respuesta de MotoDetail 
+            setModelo (modelos)
         })()
 
-    }, [motosId])
+    }, [modelosId])
 
     const getItemDetail = () => {
         return new Promise ( (resolve) => {
             setTimeout(() =>{
-                resolve(motos.find((m) => m.id === Number  (motosId)))
+                resolve(modelos.find((m) => m.id === Number  (modelosId)))
             }, 1000);
         })
     } 
 
     return (
         <>
-        <ItemDetail moto={moto}/>
+        <ItemDetail modelo={modelo}/>
         </>
     )
 }
