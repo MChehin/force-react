@@ -6,13 +6,14 @@ import "./CartItem.css"
 
 const CartItem = ({ MotoCard }) => {
   const { deleteById, removeOneUnit } = useCartContext();
-  const { name, quantity, price, id } = MotoCard;
+  const { name, quantity, price, id, image } = MotoCard;
 
 
 
   
   return (
     <div className="cart-item">
+      <img src={ image }/> 
       <h1>{name}</h1>
       <h4>Unidad/es: {quantity}</h4>
       <h4>Precio unitario: USD ${price}</h4>

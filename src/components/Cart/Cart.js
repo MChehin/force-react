@@ -14,11 +14,11 @@ const Cart = () => {
       {cartList.length > 0 ? (
         <>
           <button className="btn m-5" onClick={() => emptyCart()}>Limpiar carrito de compras</button>
-          <h1>Precio total: USD ${totalPrice()}</h1>
+          <h1 className="text-2xl font-semibold ml-3 p-2">Precio total: USD ${totalPrice()}</h1>
           
         </>
       ) : (
-        <h1>Carrito vacío</h1>
+        <h1 className="text-2xl font-semibold ml-3 p-40">Carrito vacío</h1>
       )}
     </div>
   );

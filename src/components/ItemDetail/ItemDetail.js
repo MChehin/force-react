@@ -4,7 +4,7 @@ import GoToCart from '../GoToCart/GoToCart';
 import ItemCount from '../SetCount/SetCount';
 import { useState } from "react";
 import "./ItemDetail.css"
-import { findByLabelText } from '@testing-library/react';
+
 
 
 
@@ -39,7 +39,7 @@ const ItemDetail = ({moto, darkMode = false}) => {
         <h2>{moto.name}</h2>
         <h3>{moto.year}</h3>
         <p>{moto.price}</p>
-        <h4>Stock: {stock} unidades</h4>
+        <h4>Stock: {stock} unidad/es</h4>
         {countToAdd === 0 ? (
         <ItemCount stock={ stock } initial={ 1 } onAdd={handleOnAdd} />
       ) : (
