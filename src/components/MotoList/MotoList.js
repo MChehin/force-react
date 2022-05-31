@@ -8,7 +8,7 @@ const MotoList = ({modelos}) => {
 
     return (
         <div className= "moto-list p-6">       
-        {modelos.map( modelo => <MotoCard key={modelo.id} modeloData={modelo} darkMode={darkMode}/> )}
+        {modelos.map( modelo => <MotoCard key={modelo.id} modelosData={modelo} darkMode={darkMode}/> )}
         </div>
     )
 }

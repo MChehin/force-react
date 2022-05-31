@@ -1,6 +1,7 @@
 import { addDoc, collection, doc, getFirestore, updateDoc, writeBatch } from "firebase/firestore"
 import { useCart } from "../../context/CartContexProvider"
 
+
 const SaveItem = () => {
     const { orden } = useCart()
     
@@ -29,8 +30,7 @@ const SaveItem = () => {
     }
     
     const updateHandler = async () => {
-      const id = ''
-      
+      const id = ''//Falta el ID de la compra 
       const db = getFirestore()
       const docToUpdate = doc(db,'Orden', id)
       try {

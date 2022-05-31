@@ -15,9 +15,7 @@ const MotosListContainer = () => {
   const getModelosList = () => {
 
     const db = getFirestore()
-
     const modelosCollection = collection(db, 'ForceReact')
-
     const filteredCollection = categoryId && query(modelosCollection, where("brand", "==", categoryId))
 
     return getDocs( filteredCollection || modelosCollection ).then(snapshot => {
@@ -47,7 +45,7 @@ useEffect(() => {
 
     <>
 <div  className='text-4xl text-white bg-black p-2 m-4'>Nuestras Motos</div>
-      <MotoList motos={modelos} />
+      <MotoList modelo={modelos} />
     </>
     )
 

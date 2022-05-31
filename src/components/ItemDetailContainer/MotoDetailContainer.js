@@ -1,8 +1,9 @@
-import { collection, doc, getDoc, getFirestore, where, query } from "firebase/firestore"
+import { doc, getDoc, getFirestore } from "firebase/firestore"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { useDarkMode } from "../../context/darkModeContext"
 import ItemDetail from "../ItemDetail/ItemDetail"
+ 
 
 const ItemDetailContainer = () => {
     const {motosId} = useParams()

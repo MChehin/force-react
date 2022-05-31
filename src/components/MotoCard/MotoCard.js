@@ -3,26 +3,27 @@ import { Link } from 'react-router-dom';
 import "./MotoCard.css";
 
 
-const MotoCard = ( {motoData, darkMode = false} ) => {
+const MotoCard = ( {modelosData, ForceReact: m} ) => {
 
-  const {image, brand, name, id, price, year} = motoData;  
+  const {image, brand, title, description, id, price, year} = modelosData;  
 
   
   return (
-      <div className={`moto-card1 m-5 p-2  ${darkMode ? 'bg-black-800' : '' }`}>
+      <div className={`moto-card1 m-5 p-2}`}>
           
-          <strong>{motoData.brand}</strong>
-          <img src= {motoData.image} alt={motoData.name}/>
-          <h1>MODELO:{motoData.name}</h1>
-          <h2>AÑO: {motoData.year}</h2>
-          <h2>PRECIO: {motoData.price}</h2>
-          <h2>STOCK:{motoData.stock}</h2>
+          <strong>{m.brand}</strong>
+          <img src= {m.image} alt={m.title}/>
+          <h1>{m.description}</h1>
+          <h2>DESCRIPCIÓN:{m.description}</h2>
+          <h3>AÑO: {m.year}</h3>
+          <h2>PRECIO: {m.price}</h2>
+          <h3>STOCK:{m.stock}</h3>
+          
           <div>
-          <Link to={`/motoData/${ id }`}>
+          <Link to={`/modelosData/${ id }`}>
           <button className="btn"> Detalle </button>
           </Link>
-            </div>
-             
+            </div>             
       </div>
     )
   }
