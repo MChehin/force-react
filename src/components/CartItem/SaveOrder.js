@@ -11,8 +11,11 @@ const SaveItem = () => {
         email: 'maria@gmail.com'
       }
       
+
       const orden = {
         buyer: client,
+        items: 'id, title, price',
+        total: cartList.length,
         }
 
       console.log( orden );

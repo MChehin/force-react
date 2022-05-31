@@ -1,35 +1,37 @@
-import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
+import { collection, doc, getDoc, getFirestore, where, query } from "firebase/firestore"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { useDarkMode } from "../../context/darkModeContext"
 import ItemDetail from "../ItemDetail/ItemDetail"
 
 const ItemDetailContainer = () => {
-    const {modelosId} = useParams()
+    const {motosId} = useParams()
     const [modelo, setModelo] = useState( {} )
     
+
     const darkMode = useDarkMode()
     
     useEffect(() => {
         
     (async () => {
             const modelos = await getItemDetail()  //función anónima asincrónica autoejecutable, que para la ejecución hasta obtener la respuesta de MotoDetail 
-            setModelo (modelos)
+            setModelo({...modelos.data(), id:modelos.id })
         })()
 
-    }, [modelosId])
+    }, [motosId])
 
     const getItemDetail = () => {
-        return new Promise ( (resolve) => {
-            setTimeout(() =>{
-                resolve(modelos.find((m) => m.id === Number  (modelosId)))
-            }, 1000);
-        })
-    } 
+        
+        const db = getFirestore();
+            const itemDet = doc(db, "ForceReact", motosId);
+            console.log({itemDet})
+            return getDoc(itemDet)
+
+   }
 
     return (
         <>
-        <ItemDetail modelo={modelo}/>
+        <ItemDetail moto={modelo}/>
         </>
     )
 }

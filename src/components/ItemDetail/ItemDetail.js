@@ -1,9 +1,9 @@
 import React from 'react'
-import { useCartContext } from "../../context/CartContexProvider";
 import GoToCart from '../GoToCart/GoToCart';
 import ItemCount from '../SetCount/SetCount';
 import { useState } from "react";
 import "./ItemDetail.css"
+import { useCart } from '../../context/CartContexProvider';
 
 
 
@@ -11,7 +11,7 @@ import "./ItemDetail.css"
 const ItemDetail = ({moto, darkMode = false}) => {
   const { name, price, image, brand, year, id, stock, } = moto;
   const [countToAdd, setCountToAdd] = useState(0);
-  const { addToCart, unitsPerProduct } = useCartContext();
+  const { addToCart, unitsPerProduct } = useCart();
 
  
   const handleOnAdd = (count) => {
