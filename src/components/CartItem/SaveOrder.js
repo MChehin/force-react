@@ -4,6 +4,7 @@ import { useCart } from "../../context/CartContexProvider"
 
 const SaveItem = () => {
     const { orden } = useCart()
+    const { cartList } = useCart()
     
     const saveItemHandler = () => {
       const client = {
