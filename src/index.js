@@ -12,12 +12,12 @@ import { initializeApp } from "firebase/app";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAF-YD2tquJ05R9xWEGb24Z_ejpBCnW_mY",
-  authDomain: "forcereact-cb509.firebaseapp.com",
-  projectId: "forcereact-cb509",
-  storageBucket: "forcereact-cb509.appspot.com",
-  messagingSenderId: "485950484962",
-  appId: "1:485950484962:web:3da2f8583958d6549c49bb"
+  apiKey: process.env.REACT_APP_APIKEY ,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_APPID
 };
 
 
