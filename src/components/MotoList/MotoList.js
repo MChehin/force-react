@@ -6,7 +6,7 @@ const MotoList = ({modelos}) => {
     
     return (
         <>  
-        <div className= "moto-list p-6">       
+        <div className= "grid grid-cols-4 gap-4 moto-list p-6">       
         {modelos.map( m => <MotoCard key={m.id}  ForceReact={m} />)}
         </div>
         </>

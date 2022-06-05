@@ -1,6 +1,12 @@
 .moto-list {
     display: flex;
-    align-items: center;
+    align-items:stretch  ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     
 }
+
+.moto-list img {
+    width: 200px;
+    height: 200px;
+}
+
