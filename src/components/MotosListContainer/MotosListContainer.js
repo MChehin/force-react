@@ -45,7 +45,7 @@ useEffect(() => {
 
     <>
 <div  className='text-4xl text-white bg-black p-2 m-4'>Nuestras Motos</div>
-      <MotoList modelo={modelos} />
+      <MotoList modelos={modelos} />
     </>
     )
 
