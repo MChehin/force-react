@@ -1,10 +1,10 @@
 # Force Garage - React 
 
-This project was created with  **React App** in a [CoderHouse] React course (https://www.coderhouse.com/) by *[Maria Chehin]* (https://www.linkedin.com/in/maria-chehin/).
+This project was created with  **React App** in a [CoderHouse] React course (https://www.coderhouse.com/) by *[Maria Chehin]* (https://www.linkedin.com/in/maria-chehin/). It´s a fictional store of a motorcycle workshop sited in Buenos Aires, Argentina. 
 
 
 ## Online page
-You can see this project online [Here] (#)
+You can see this project online [Here] (https://force-react.vercel.app/)
 
 ## GitHub Repository
 You can see it [Here] (https://github.com/MChehin/force-react)

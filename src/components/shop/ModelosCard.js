@@ -1,5 +1,6 @@
 import React from 'react'
 import "./ModelosCard.css";
+import { Link } from 'react-router-dom';
 
 
 const ModelosCard = ( {mData, ForceReact: m}) => { 
@@ -14,8 +15,11 @@ const ModelosCard = ( {mData, ForceReact: m}) => {
               <div>Año: { m.year} </div>
               <div>Precio USD$: { m.price} </div>
               <div>Stock: { m.stock} </div>
-              
-            </div>
+          
+          <Link to={`/motoData/${ m.id }`}>
+          <button className="btn"> Detalle </button>
+          </Link>
+            </div> 
           </div>
     
 
