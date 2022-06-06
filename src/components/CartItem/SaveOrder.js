@@ -16,7 +16,7 @@ const SaveItem = () => {
 
       const orden = {
         buyer: client,
-        items: 'id, title, price',
+        items: 'id, brand, title, price',
         total: cartList.length,
         }
 
@@ -58,12 +58,12 @@ const SaveItem = () => {
     }
 
     return (
-    <div>
-        { orden.map( o => <li key={o}> {o} </li>) }
+    <>
+        { orden.map( o => <li key={o}  ForceReact={o}> </li>) }
         <button onClick={saveItemHandler} className='btn'>Salvar carrito</button>    
         <button onClick={updateHandler} className='btn ml-5'>Actualizar Total</button>
         <button onClick={batchHandler} className='btn ml-5'>Batch</button>
-    </div>
+    </>
   )
 }
 export default SaveItem

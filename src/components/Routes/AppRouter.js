@@ -9,6 +9,7 @@ import Footer from "../footer/footer";
 import About from "../../pages/aboutus";
 import SaveOrder from "../CartItem/SaveOrder";
 import Home from "../../pages/home";
+import Formulario from "../../pages/form";
 
 
 
@@ -26,6 +27,7 @@ const AppRouter = () => {
           <Route path="*" element={<NotFound404 />}/>
           <Route path="/modelos" element={<Modelos />} />
           <Route path="/Cart" element={<Cart />}/>
+          <Route path="/form" element={<Formulario />}/>
           <Route path="/CartItem/SaveOrder" element={<SaveOrder />}/>
         </Routes>
       <Footer/>

@@ -21,6 +21,7 @@ const Cart = () => {
         <h1 className="text-2xl font-semibold ml-3 p-40">Carrito vacío</h1>
       )}
     </div>
+    
   );
 };
 

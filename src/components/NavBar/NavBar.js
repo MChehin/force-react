@@ -28,7 +28,6 @@ const NavBar = () => {
           <Link to='/MotosListContainer/"Suzuki"' className="mr-5"> Suzuki </Link>
           <Link to='/MotosListContainer/"Yamaha"' className="mr-5"> Yamaha </Link>
           <Link to='/MotosListContainer/"Honda"' className="mr-5"> Honda </Link>
-          
           <Link to='/CartItem/SaveOrder' className="mr-5"> Salvar orden </Link>
           {totalCount() > 0 && <CartWidget />}
         </nav>
