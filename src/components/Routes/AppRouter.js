@@ -7,7 +7,7 @@ import Modelos from "../shop/Modelos";
 import NotFound404 from "../../pages/NotFound404";
 import Footer from "../footer/footer";
 import About from "../../pages/aboutus";
-import SaveOrder from "../CartItem/SaveOrder";
+import SaveItem from "../CartItem/SaveOrder";
 import Home from "../../pages/home";
 import Formulario from "../../pages/form";
 
@@ -28,7 +28,7 @@ const AppRouter = () => {
           <Route path="/modelos" element={<Modelos />} />
           <Route path="/Cart" element={<Cart />}/>
           <Route path="/form" element={<Formulario />}/>
-          <Route path="/CartItem/SaveOrder" element={<SaveOrder />}/>
+          <Route path="/CartItem/SaveOrder" element={<SaveItem />}/>
         </Routes>
       <Footer/>
     </BrowserRouter>

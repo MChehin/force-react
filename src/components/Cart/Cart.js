@@ -7,6 +7,8 @@ import GoToForm from '../GoToForm/GoToForm';
 const Cart = () => {
   const { cartList, emptyCart, totalPrice } = useCartContext();
 
+
+
   return (
     <div className="cart-style">
       {cartList.map((MotoCard) => (

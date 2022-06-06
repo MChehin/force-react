@@ -8,7 +8,7 @@ const SaveItem = () => {
     
     const saveItemHandler = () => {
       const client = {
-        user: 'Maria',
+        name: 'Maria C',
         phone: '123456',
         email: 'maria@gmail.com'
       }
